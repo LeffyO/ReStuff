@@ -3,6 +3,7 @@ package net.leffy.meteorits.item;
 import net.leffy.meteorits.ReStuff;
 import net.leffy.meteorits.item.custom.Camera;
 import net.leffy.meteorits.item.custom.TripodLegs;
+import net.leffy.meteorits.item.custom.Wrench;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -16,6 +17,11 @@ public class ModItems {
 
     public static final DeferredItem<Item> TRIPOD_LEG = ITEMS.register("tripod_leg",
             () -> new TripodLegs(new Item.Properties()));
+
+    public static final DeferredItem<Item> WRENCH = ITEMS.register("wrench",
+            () -> new Wrench(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

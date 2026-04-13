@@ -23,6 +23,7 @@ public class ModCreativeTab {
                         output.accept(ModBlocks.TRIPOD);
                         output.accept(ModBlocks.TRIPODWITHCAM);
                         output.accept(ModBlocks.SOMETHING);
+                        output.accept(ModItems.WRENCH);
                     }).build());
 
     public static void register(IEventBus eventBus) {
