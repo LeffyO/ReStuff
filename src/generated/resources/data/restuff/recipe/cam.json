@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:redstone"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "O": {
+      "item": "minecraft:stone_button"
+    },
+    "T": {
+      "item": "minecraft:gray_wool"
+    }
+  },
+  "pattern": [
+    "TIO",
+    "IGI",
+    "TIT"
+  ],
+  "result": {
+    "count": 1,
+    "id": "restuff:cam"
+  }
+}

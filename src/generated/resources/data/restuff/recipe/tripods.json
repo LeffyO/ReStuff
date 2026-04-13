@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:smooth_stone_slab"
+    },
+    "B": {
+      "item": "restuff:tripod_leg"
+    }
+  },
+  "pattern": [
+    " A ",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "restuff:tripods"
+  }
+}

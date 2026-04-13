@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "restuff:block/tripods",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "restuff:block/tripods"
+    },
+    "facing=south": {
+      "model": "restuff:block/tripods",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "restuff:block/tripods",
+      "y": 270
+    }
+  }
+}

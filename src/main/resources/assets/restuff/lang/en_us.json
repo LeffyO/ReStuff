@@ -1,0 +1,24 @@
+{
+  "itemGroup.restuff": "Example Mod Tab",
+  "block.restuff.example_block": "Example Block",
+  "item.restuff.cam": "Cam",
+  "item.restuff.tripod_leg": "Tripod Legs",
+  "block.restuff.tripods": "Tripods",
+  "block.restuff.tripodswcam": "Tripods With Cam",
+
+  "creativetab.restuff.restuff_tab": "ReStuff",
+
+
+  "tooltip.restuff.camera.tooltip": "Dumbahh Camera",
+  "tooltip.restuff.tripods.tooltip": "A Tripods",
+  "tooltip.restuff.tripodwcam.tooltip": "Tripod And A Camera On It",
+
+
+  "restuff.configuration.title": "ReStuff Configs",
+  "restuff.configuration.section.restuff.common.toml": "ReStuff Configs",
+  "restuff.configuration.section.restuff.common.toml.title": "ReStuff Configs",
+  "restuff.configuration.items": "Item List",
+  "restuff.configuration.logDirtBlock": "Log Dirt Block",
+  "restuff.configuration.magicNumberIntroduction": "Magic Number Text",
+  "restuff.configuration.magicNumber": "Magic Number"
+}

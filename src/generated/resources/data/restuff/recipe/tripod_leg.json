@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "F": {
+      "item": "minecraft:gray_wool"
+    },
+    "J": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "F",
+    "J"
+  ],
+  "result": {
+    "count": 1,
+    "id": "restuff:tripod_leg"
+  }
+}
