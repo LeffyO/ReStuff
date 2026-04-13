@@ -1,6 +1,7 @@
 package net.leffy.meteorits;
 
 import net.leffy.meteorits.block.ModBlocks;
+import net.leffy.meteorits.components.ModDataComponents;
 import net.leffy.meteorits.item.ModCreativeTab;
 import net.leffy.meteorits.item.ModItems;
 import org.slf4j.Logger;
@@ -40,6 +41,8 @@ public class ReStuff {
         ModItems.register(modEventBus);
 
         ModBlocks.register(modEventBus);
+
+        ModDataComponents.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

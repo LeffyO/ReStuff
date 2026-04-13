@@ -3,9 +3,11 @@ package net.leffy.meteorits.block.custom;
 import com.mojang.serialization.MapCodec;
 import net.leffy.meteorits.block.ModBlocks;
 import net.leffy.meteorits.util.ModTags;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.Item;
@@ -54,6 +56,7 @@ public class TripodsBlock extends HorizontalDirectionalBlock {
                 itemEntity.setRemoved(Entity.RemovalReason.KILLED);
             }
         }
+
     }
 
     private boolean isValidItem(ItemStack item) {
@@ -62,7 +65,7 @@ public class TripodsBlock extends HorizontalDirectionalBlock {
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.restuff.tripods.tooltip"));
+        tooltipComponents.add(Component.literal("this is a ").withStyle(ChatFormatting.GRAY).append(Component.literal("Tripod").withStyle(style -> style.withColor(TextColor.fromRgb(0x93b7ff)))));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

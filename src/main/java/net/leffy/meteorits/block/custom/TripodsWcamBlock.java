@@ -3,9 +3,11 @@ package net.leffy.meteorits.block.custom;
 import com.mojang.serialization.MapCodec;
 import net.leffy.meteorits.block.ModBlocks;
 import net.leffy.meteorits.item.ModItems;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextColor;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -66,7 +68,7 @@ public class TripodsWcamBlock extends HorizontalDirectionalBlock{
 
     @Override
     public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
-        tooltipComponents.add(Component.translatable("tooltip.restuff.tripodwcam.tooltip"));
+        tooltipComponents.add(Component.literal("this is a ").withStyle(ChatFormatting.GRAY).append(Component.literal("Tripod With Camera").withStyle(style -> style.withColor(TextColor.fromRgb(0x93b7ff)))));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 

@@ -2,6 +2,7 @@ package net.leffy.meteorits.item;
 
 import net.leffy.meteorits.ReStuff;
 import net.leffy.meteorits.item.custom.Camera;
+import net.leffy.meteorits.item.custom.TripodLegs;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -14,7 +15,7 @@ public class ModItems {
             () -> new Camera(new Item.Properties()));
 
     public static final DeferredItem<Item> TRIPOD_LEG = ITEMS.register("tripod_leg",
-            () -> new Item(new Item.Properties()));
+            () -> new TripodLegs(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
