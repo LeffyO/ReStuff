@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "restuff:block/something"
+    }
+  }
+}
