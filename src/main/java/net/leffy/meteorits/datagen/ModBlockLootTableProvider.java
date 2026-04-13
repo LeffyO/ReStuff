@@ -1,7 +1,6 @@
 package net.leffy.meteorits.datagen;
 
 import net.leffy.meteorits.block.ModBlocks;
-import net.leffy.meteorits.item.ModItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;

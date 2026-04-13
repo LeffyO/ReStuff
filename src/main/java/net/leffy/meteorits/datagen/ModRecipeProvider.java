@@ -2,7 +2,6 @@ package net.leffy.meteorits.datagen;
 
 import net.leffy.meteorits.block.ModBlocks;
 import net.leffy.meteorits.item.ModItems;
-import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
