@@ -39,20 +39,20 @@ public class TripodsBlock extends HorizontalDirectionalBlock {
 
     @Override
     public @Nullable BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(BlockStateProperties.FACING, context.getHorizontalDirection().getOpposite());
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING);
+        builder.add(BlockStateProperties.FACING);
     }
 
     @Override
     protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-        Direction direction = state.getValue(FACING);
+        Direction direction = state.getValue(BlockStateProperties.FACING);
         if (entity instanceof ItemEntity itemEntity) {
             if (isValidItem(itemEntity.getItem())) {
-                level.setBlock(pos, ModBlocks.TRIPODWITHCAM.get().defaultBlockState().setValue(FACING, direction), 3);
+                level.setBlock(pos, ModBlocks.TRIPODWITHCAM.get().defaultBlockState().setValue(BlockStateProperties.FACING, direction), 3);
                 itemEntity.setRemoved(Entity.RemovalReason.KILLED);
             }
         }
