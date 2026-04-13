@@ -20,7 +20,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
-        blockWithItem(ModBlocks.SOMETHING);
 
         getVariantBuilder(ModBlocks.TRIPOD.get())
                 .forAllStates(blockState -> {
