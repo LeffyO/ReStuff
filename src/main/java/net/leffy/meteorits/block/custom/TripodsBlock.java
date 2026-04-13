@@ -44,15 +44,15 @@ public class TripodsBlock extends HorizontalDirectionalBlock {
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(BlockStateProperties.FACING);
+        builder.add(FACING);
     }
 
     @Override
     protected void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
-        Direction direction = state.getValue(BlockStateProperties.FACING);
+        Direction direction = state.getValue(FACING);
         if (entity instanceof ItemEntity itemEntity) {
             if (isValidItem(itemEntity.getItem())) {
-                level.setBlock(pos, ModBlocks.TRIPODWITHCAM.get().defaultBlockState().setValue(BlockStateProperties.FACING, direction), 3);
+                level.setBlock(pos, ModBlocks.TRIPODWITHCAM.get().defaultBlockState().setValue(FACING, direction), 3);
                 itemEntity.setRemoved(Entity.RemovalReason.KILLED);
             }
         }
@@ -68,4 +68,5 @@ public class TripodsBlock extends HorizontalDirectionalBlock {
         tooltipComponents.add(Component.literal("this is a ").withStyle(ChatFormatting.GRAY).append(Component.literal("Tripod").withStyle(style -> style.withColor(TextColor.fromRgb(0x93b7ff)))));
         super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
+
 }

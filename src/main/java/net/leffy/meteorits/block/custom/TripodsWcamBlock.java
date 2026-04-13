@@ -42,22 +42,22 @@ public class TripodsWcamBlock extends HorizontalDirectionalBlock{
 
     @Override
     public @Nullable BlockState getStateForPlacement(BlockPlaceContext context) {
-        return this.defaultBlockState().setValue(BlockStateProperties.FACING, context.getHorizontalDirection().getOpposite());
+        return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite());
     }
 
     @Override
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(BlockStateProperties.FACING);
+        builder.add(FACING);
     }
 
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
-        Direction direction = state.getValue(BlockStateProperties.FACING);
+        Direction direction = state.getValue(FACING);
 
         if (player.isCrouching()) {
             if (!level.isClientSide) {
                 player.addItem(ModItems.CAM.toStack(1));
-                level.setBlock(pos, ModBlocks.TRIPOD.get().defaultBlockState().setValue(BlockStateProperties.FACING, direction), 3);
+                level.setBlock(pos, ModBlocks.TRIPOD.get().defaultBlockState().setValue(FACING, direction), 3);
                 return InteractionResult.SUCCESS;
             }
         } else {
