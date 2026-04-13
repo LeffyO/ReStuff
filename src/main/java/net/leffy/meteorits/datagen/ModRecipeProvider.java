@@ -55,6 +55,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
                 .save(recipeOutput);
 
-
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.WRENCH.get())
+                .pattern("V V")
+                .pattern(" V ")
+                .pattern(" C ")
+                .define('V', Items.IRON_INGOT)
+                .define('C', Items.STICK)
+                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .save(recipeOutput);
     }
 }
