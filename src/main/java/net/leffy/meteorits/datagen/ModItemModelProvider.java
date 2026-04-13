@@ -18,5 +18,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.TRIPOD_LEG.get());
         basicItem(ModBlocks.TRIPOD.get().asItem());
         basicItem(ModBlocks.TRIPODWITHCAM.get().asItem());
+        basicItem(ModBlocks.SOMETHING.get().asItem());
     }
 }

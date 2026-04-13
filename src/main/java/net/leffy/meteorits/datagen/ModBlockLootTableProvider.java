@@ -18,6 +18,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.TRIPOD.get());
         dropSelf(ModBlocks.TRIPODWITHCAM.get());
+        dropSelf(ModBlocks.SOMETHING.get());
     }
 
     @Override

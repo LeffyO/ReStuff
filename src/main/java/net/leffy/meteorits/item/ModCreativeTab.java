@@ -22,6 +22,7 @@ public class ModCreativeTab {
                         output.accept(ModItems.TRIPOD_LEG);
                         output.accept(ModBlocks.TRIPOD);
                         output.accept(ModBlocks.TRIPODWITHCAM);
+                        output.accept(ModBlocks.SOMETHING);
                     }).build());
 
     public static void register(IEventBus eventBus) {

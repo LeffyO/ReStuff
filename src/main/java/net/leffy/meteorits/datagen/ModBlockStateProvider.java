@@ -23,6 +23,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 //        simpleBlock(ModBlocks.TRIPOD.get(), tripodModel());
 //        simpleBlock(ModBlocks.TRIPODWITHCAM.get(), createTripodWithCamModel());
 
+        blockWithItem(ModBlocks.SOMETHING);
+
         getVariantBuilder(ModBlocks.TRIPOD.get())
                 .forAllStates(blockState -> {
                     Direction direction = blockState.getValue(BlockStateProperties.HORIZONTAL_FACING);

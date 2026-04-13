@@ -1,6 +1,7 @@
 package net.leffy.meteorits.block;
 
 import net.leffy.meteorits.ReStuff;
+import net.leffy.meteorits.block.custom.SomethingBlock;
 import net.leffy.meteorits.block.custom.TripodsBlock;
 import net.leffy.meteorits.block.custom.TripodsWcamBlock;
 import net.leffy.meteorits.item.ModItems;
@@ -23,6 +24,9 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> TRIPODWITHCAM = registerBlock("tripodswcam",
             () -> new TripodsWcamBlock(BlockBehaviour.Properties.of().strength(1.0f).sound(SoundType.STONE).requiresCorrectToolForDrops().noCollission()));
+
+    public static final DeferredBlock<Block> SOMETHING = registerBlock("something",
+            () -> new SomethingBlock(BlockBehaviour.Properties.of().strength(2.0f).sound(SoundType.STONE).requiresCorrectToolForDrops()));
 
     public static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
